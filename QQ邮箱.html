@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        body{
+           background: url(./p2.jpg);
+           background-repeat:no-repeat ;
+           background-position:200px 150px;
+           font-size: 12px;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration:underline;
+            color: #C20C0C;
+        }
+        .header a, .footer a{
+            color: #1d5494;
+        }
+        .header{
+            width: 100%;
+            height: 63px;
+            background-color: rgb(239,244,250);
+            text-align: right;
+        }
+        .issue{
+            float: right;
+            padding-top: 25px;
+            padding-right: 45px;  
+        }
+        .image{
+            float: left;
+            position: absolute;
+            left: 40px;
+            top: 14px;
+        }
+
+        .content{
+            width: 1519px;
+            height: 480px; 
+        }
+        .word{
+                line-height: 25px;  
+            }
+        .point{
+            color: rgb(111,149,200);
+            font-size: 25px;
+            font-weight: normal;
+            line-height: 26px;
+            font-size: 24px;
+        }
+        .box1{height: 50px;
+            width: 334px;
+            border-style:solid;
+            border-radius: 6px 6px 0 0 ;
+            border-width: 1px;
+            border-color: rgb(160,177,196);
+            position: absolute;
+            right: 300px;
+            top: 140px;
+            border-bottom: 0px;
+        }
+        .wechat{
+            float: left;
+            font-size: 16px;
+            width: 50%;
+            font-size: 16px;
+            line-height: 50px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .QQ{
+            display: block;
+            float: right;
+            width: 50%;
+            font-size: 16px;
+            line-height: 50px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .box2{
+            width: 334px;
+            height: 353px;
+            border-style:solid;
+            border-radius: 0 0 6px 6px;
+            border-width: 1px;
+            border-color: rgb(160,177,196);
+            position: absolute;
+            right: 300px;
+            top: 190px;
+        }
+        .account{
+            margin-top: 40px;
+            margin-left: 25px;
+            width: 280px;
+            height: 40px;
+        }
+        .password{
+            margin-top: 15px;
+            margin-left: 25px;
+            width: 280px;
+            height: 40px;
+        }
+        .checkbox{
+           height: 18px;
+           line-height: 18px;
+           margin-left: 25px; 
+           margin-top: 15px; 
+           width: 20px;
+          
+        }
+        p{
+            vertical-align: middle;
+        }
+        .submit{
+            margin-left: 25px;
+            margin-top: 10px;
+            border: 1px solid ;
+            border-radius: 5px;
+            font-size: 16px;
+            background: rgb(106,162,224);
+            width: 285px;
+            height: 40px;
+            color: white;
+        }
+        .m1{
+            float: left;
+            margin-top: 81px; 
+            margin-left: 35px;
+            color: #1d5494;
+        }
+        .m2{
+            float: right;
+            margin-top: 80px;
+            margin-right: 30px;
+            color: #1d5494;
+        }
+        .footer{
+            position:fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            line-height: 40px;
+            height: 40px;
+            background-color: rgb(239,244,250);
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+     <div class="header"> 
+         <div class="image"><img src="./p1.png" alt="仿QQ邮箱"></div>
+         <div class="issue"> <a href="javascript">基本版</a>
+            |
+           <a href="javascript">English</a>
+           |
+           <a href="javascript">手机版</a>
+           |
+           <a href="javascript">企业微信</a>
+        </div>
+         
+     </div>
+     <div class="content">
+         
+    
+         <div class="box1">
+             <div class="wechat">微信登录</div>
+             <div class="QQ">QQ登录</div>
+         </div>
+        <div class="box2">
+            <input type="text" placeholder="支持QQ/邮箱/手机号登录" class="account">
+            <input type="password" placeholder="QQ密码" class="password">
+            <p>
+                <input type="checkbox" class="checkbox" >下次自动登录
+            </p>
+            <input type="submit" value="登&nbsp;录" class="submit">
+            <nav>
+                <a href="javascript" class="m1">忘了密码?</a>
+                <a href="javascript" class="m2">注册新账号</a>
+            </nav>
+        </div>
+         
+     </div>
+     <div class="footer">
+        <div>
+            <a href="javascript">关于腾讯</a> |
+            <a href="javascript">服务条款</a> |
+            <a href="javascript">隐私政策</a> |
+            <a href="javascript">客服中心</a> |
+            <a href="javascript">联系我们</a> |
+            <a href="javascript">帮助中心</a>
+            <span>©1998 - 2021 Tencent Inc. All Rights Reserved.</span>
+        </div>
+        
+     </div>   
+</body>
+</html>
